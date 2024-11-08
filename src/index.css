@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.light {
+  /* --primaryBg: 255, 255, 255; */
+  /* rgb(54, 186, 152) */
+  --bgColour: 254, 243, 226;
+  --cardComponent: 250, 177, 47;
+  --borderColor: 0, 0, 0;
+  /* --textColour: 226, 226, 182; */
+  /* --cardComponent: rgba(var(--textColour)); */
+  background-color: rgba(var(--bgColour));
+
+  /* color: rgba(var(--textColour)); */
+}
+.dark {
+  --primaryBg: 0, 0, 0;
+  /* --cardComponent: 87, 166, 161; */
+  /* --primaryBg: 11, 25, 44; */
+  --borderColor: 255, 255, 255;
+  --textColour: 255, 255, 255;
+  --cardComponent: 11, 25, 44;
+  /* --cardComponent: 110, 172, 218; */
+  background-color: rgba(var(--primaryBg));
+  color: rgba(var(--textColour));
+  /* rgb(11, 25, 44) */
+}
